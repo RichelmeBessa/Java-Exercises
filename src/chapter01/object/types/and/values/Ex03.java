@@ -15,24 +15,18 @@ public class Ex03 {
         Scanner scanner = new Scanner(System.in);
         int val1;
         int val2;
-        System.out.println("Write number interger");
+        System.out.println("Write number integer");
         val1 = scanner.nextInt();
-        System.out.println("Write other number interger");
+        System.out.println("Write other number integer");
         val2 = scanner.nextInt();
         if (val1 > val2) {
-            System.out.println(val1);
-        }
-        if (val1 < val2) {
-            System.out.println(val2);
-        }
-        if (val1 > val2) {
-            System.out.println("The smaller number is " + val1);
+            System.out.println("The biggest number is " + val1);
+            System.out.println("The smallest number is " + val2);
         } else {
-            System.out.println("The larger number is " + val2);
+            System.out.println("The biggest number is " + val2);
+            System.out.println("The smallest number is " + val1);
         }
-        if (val1 < val2) {
-            System.out.println("The smaller number is " + val1);
-        }
+        
         System.out.println("The sum of the numbers is equal to " + (val1+val2));
         System.out.println("The difference of the number is equal to " + (val1-val2));
         System.out.println("The product of the number is equal to " + (val1*val2));
