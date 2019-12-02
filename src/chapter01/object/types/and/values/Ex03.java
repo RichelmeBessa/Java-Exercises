@@ -1,14 +1,11 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
+/**
+ * Write a program that prompts the user to enter two integer. Store these
+ * values in int variables named val1 and val2. Write your program to determine
+ * the smaller, larger, sum, difference, product, and ratio of these values and
+ * report them to the user.
  */
 package chapter01.object.types.and.values;
 
-/**
- *
- * @author derickfelix
- */
 public class Ex03 {
     
 }
