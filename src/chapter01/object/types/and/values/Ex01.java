@@ -22,7 +22,7 @@ public class Ex01 {
         name = scanner.next();
         System.out.println("Now, enter your age: ");
         idade = scanner.nextInt();
-        System.out.println("Hello, " + name + " (age " + idade * 12 + " Months)");
+        System.out.println("Hello, " + name + " (age " + idade * 12 + " months)");
 
     }
 }
