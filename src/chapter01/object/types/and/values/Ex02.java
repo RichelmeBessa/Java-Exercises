@@ -11,9 +11,9 @@ public class Ex02 {
     {
         Scanner scanner = new Scanner(System.in);
         int miles;
-        System.out.println("Escreva a quantidade de milhas");
+        System.out.println("Enter the amount of miles");
         miles = scanner.nextInt();
-        System.out.println("O resultado e: " + miles*1.609344 );
+        System.out.println(miles + " miles is " + miles * 1.609344 + " kilometers");
         
     } 
 }
