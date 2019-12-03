@@ -8,5 +8,5 @@
 package chapter01.object.types.and.values;
 
 public class Ex05 {
-    
+
 }
