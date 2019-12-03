@@ -14,18 +14,18 @@ public class Ex06 {
         String abc;
         String bca;
         String cba;
-        
+
         System.out.println("Enter first name: ");
         abc = scanner.nextLine();
         System.out.println("Enter second name: ");
         bca = scanner.nextLine();
         System.out.println("Enter third name: ");
         cba = scanner.nextLine();
-        
+
         if (abc.compareTo(bca) <= 0 && bca.compareTo(cba) <= 0) {
-            System.out.println(abc + ", " + bca + ", " + cba);    
+            System.out.println(abc + ", " + bca + ", " + cba);
         } else if (abc.compareTo(cba) <= 0 && cba.compareTo(bca) <= 0) {
-            System.out.println(abc + ", " + cba + ", " + bca);     
+            System.out.println(abc + ", " + cba + ", " + bca);
         }
         if (bca.compareTo(abc) <= 0 && abc.compareTo(cba) <= 0) {
             System.out.println(bca + ", " + abc + ", " + cba);
