@@ -24,22 +24,18 @@ public class Ex05 {
         b = scanner.nextInt();
         System.out.println("Enter third number integer:");
         c = scanner.nextInt();
+
         if (a <= b && b <= c){
             System.out.println("The numbers ordener are: " + a + ", " + b + ", "+ c);
-        }
-        if (a <= c && c <= b) {
+        } else if (a <= c && c <= b) {
             System.out.println("The numbers ordener are: " + a + ", " + c + ", " + b);
-        }
-        if (b <= a && a <= c) {
+        } else if (b <= a && a <= c) {
             System.out.println("The numbers ordener are: " + b + ", " + a + ", " + c);
-        }
-        if (b <= c && c <= a) {
+        } else if (b <= c && c <= a) {
             System.out.println("The numbers ordener are: " + b + ", " + c + ", " + a);
-        }
-        if (c <= b && b <= a) {
+        } else if (c <= b && b <= a) {
             System.out.println("The numbers ordener are: " + c + ", " + b + ", " + a);
-        }
-        if (c <= a && a <= b) {
+        } else if (c <= a && a <= b) {
             System.out.println("The numbers ordener are: " + c + ", " + a + ", " + b);
         }
     }
