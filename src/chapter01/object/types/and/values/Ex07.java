@@ -15,11 +15,11 @@ public class Ex07 {
         Scanner scanner = new Scanner(System.in);
         int number;
         
-        System.out.println("Enter a number ");
+        System.out.println("Enter a number even or odd ");
         number = scanner.nextInt();
         if ((number % 2) == 0)
-            System.out.println("The " + number + " is even");
+            System.out.println("The " + number + " is even!");
         else
-            System.out.println("The " + number + " is odd");
+            System.out.println("The " + number + " is odd!");
     }
 }
