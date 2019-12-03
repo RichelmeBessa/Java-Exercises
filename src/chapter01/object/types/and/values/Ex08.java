@@ -6,6 +6,27 @@
  */
 package chapter01.object.types.and.values;
 
+import java.util.Scanner;
+
 public class Ex08 {
-    
+    public static void main(String[] args)
+    {
+        Scanner scanner = new Scanner(System.in);
+        String spelled;
+        System.out.println("Numbers spelled-out to numbers: ");
+        spelled = scanner.nextLine();
+        if (spelled.equals("one")) {
+            System.out.println("1");
+        }
+        if (spelled.equals("two")){
+            System.out.println("2");
+        }
+        if (spelled.equals("three")){
+            System.out.println("3");
+        }
+        if (spelled.equals("four")){
+            System.out.println("4");
+        }
+       
+    }
 }
