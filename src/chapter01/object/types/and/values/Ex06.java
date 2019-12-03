@@ -21,18 +21,13 @@ public class Ex06 {
         bca = scanner.nextLine();
         System.out.println("Enter third name: ");
         cba = scanner.nextLine();
-         
-//        abc.compareTo(bca); // -1 abc < bca
-//        abc.compareTo(bca); // 0 abc == bca
-//        abc.compareTo(bca); // 1 abc > bca
-        
         
         if (abc.compareTo(bca) <= 0 && bca.compareTo(cba) <= 0) {
             System.out.println(abc + ", " + bca + ", " + cba);    
         } else if (abc.compareTo(cba) <= 0 && cba.compareTo(bca) <= 0) {
             System.out.println(abc + ", " + cba + ", " + bca);     
         }
-        if (bca.compareTo(abc) <= 0 && abc.compareTo(bca) <= 0) {
+        if (bca.compareTo(abc) <= 0 && abc.compareTo(cba) <= 0) {
             System.out.println(bca + ", " + abc + ", " + cba);
         } else if (bca.compareTo(cba) <= 0 && cba.compareTo(abc) <= 0) {
             System.out.println(bca + ", " + cba + ", " + abc);
