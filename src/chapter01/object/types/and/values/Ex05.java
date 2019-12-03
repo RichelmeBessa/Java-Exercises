@@ -7,13 +7,10 @@
  */
 package chapter01.object.types.and.values;
 
-import java.util.Arrays;
 import java.util.Scanner;
 
 public class Ex05 {
 
-<<<<<<< HEAD
-=======
     public static void main(String[] args)
     {
         Scanner scanner = new Scanner(System.in);
@@ -46,5 +43,4 @@ public class Ex05 {
             System.out.println("The numbers ordener are: " + c + ", " + a + ", " + b);
         }
     }
->>>>>>> adebd2a6c1c73f635429adfe9cd9a81219488e2c
 }
