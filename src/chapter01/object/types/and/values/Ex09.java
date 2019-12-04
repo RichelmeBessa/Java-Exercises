@@ -20,13 +20,13 @@ public class Ex09 {
         op = scanner.next();
         a2 = scanner.nextInt();
         if (op.equals("+")) {
-            System.out.println(a1 + " " + op + " " + a2 + "= " + (a1 + a2));
+            System.out.println(a1 + " " + op + " " + a2 + " = " + (a1 + a2));
         } else if (op.equals("-")) {
-            System.out.println(a1 + " " + op + " " + a2 + "= " + (a1 - a2));
+            System.out.println(a1 + " " + op + " " + a2 + " = " + (a1 - a2));
         } else if (op.equals("*")) {
-            System.out.println(a1 + " " + op + " " + a2 + "= " + (a1 * a2));
+            System.out.println(a1 + " " + op + " " + a2 + " = " + (a1 * a2));
         } else if (op.equals("/")) {
-            System.out.println(a1 + " " + op + " " + a2 + "= " + (a1 / a2));
+            System.out.println(a1 + " " + op + " " + a2 + " = " + (a1 / a2));
         }
     }
 }
