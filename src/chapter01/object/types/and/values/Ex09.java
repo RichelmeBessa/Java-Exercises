@@ -19,14 +19,23 @@ public class Ex09 {
         a1 = scanner.nextInt();
         op = scanner.next();
         a2 = scanner.nextInt();
-        if (op.equals("+")) {
-            System.out.println(a1 + " " + op + " " + a2 + " = " + (a1 + a2));
-        } else if (op.equals("-")) {
-            System.out.println(a1 + " " + op + " " + a2 + " = " + (a1 - a2));
-        } else if (op.equals("*")) {
-            System.out.println(a1 + " " + op + " " + a2 + " = " + (a1 * a2));
-        } else if (op.equals("/")) {
-            System.out.println(a1 + " " + op + " " + a2 + " = " + (a1 / a2));
+        int result = 0;
+        switch (op) {
+            case "+":
+                result = (a1 + a2);
+                break;
+            case "-":
+                result = (a1 - a2);
+                break;
+            case "*":
+                result = (a1 * a2);
+                break;
+            case "/":
+                result = (a1 / a2);
+                break;
+            default:
+                break;
         }
+        System.out.println(result);
     }
 }
