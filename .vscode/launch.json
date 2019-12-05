@@ -2,6 +2,12 @@
     "configurations": [
         {
             "type": "java",
+            "name": "CodeLens (Launch) - Ex01",
+            "request": "launch",
+            "mainClass": "chapter02.computation.Ex01"
+        },
+        {
+            "type": "java",
             "name": "CodeLens (Launch) - Ex10",
             "request": "launch",
             "mainClass": "chapter01.object.types.and.values.Ex10"
