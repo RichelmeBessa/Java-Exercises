@@ -41,6 +41,7 @@ public class Ex01 {
                 break;
         }
         System.out.println(result + " dollars");
+        scanner.close();
     }
-}
 
+}
