@@ -13,7 +13,7 @@ public class Ex01 {
     {
         Scanner scanner = new Scanner(System.in);
 
-        System.out.println("Enter a value, followed blank-space and your coin (y, e, p, u, k)");
+        System.out.println("Enter a value, followed blank-space and your coin (y, e, p, u, k");
 
         double value = scanner.nextInt();
         String coin = scanner.next();
