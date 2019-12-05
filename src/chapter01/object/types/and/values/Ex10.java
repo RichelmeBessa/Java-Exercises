@@ -10,10 +10,11 @@ package chapter01.object.types.and.values;
 import java.util.Scanner;
 
 public class Ex10 {
+
     public static void main(String[] args)
     {
         Scanner scanner = new Scanner(System.in);
-        
+
         System.out.println("Enter a number pennies, nickels, dimes , quarters, hald-dollars and dollar.");
         System.out.println("Value pennies: ");
         int pennies = scanner.nextInt();
@@ -28,13 +29,42 @@ public class Ex10 {
         System.out.println("Value dollar: ");
         int dollar = scanner.nextInt();
         
-        System.out.println("You have: " + pennies + " pennies");
-        System.out.println("You have: " + nickels + " nickels");
-        System.out.println("You have: " + dimes + " dimes");
-        System.out.println("You have: " + quarters + " quarters");
-        System.out.println("You have: " + half + " half-dollars");
-        System.out.println("You have: " + dollar + " dollars");
-        System.out.println(pennies*0.01 + nickels*0.05 + dimes*0.1 + quarters*0.25 + half*0.5 + dollar);
+        if (pennies > 1) {
+            System.out.println("You have: " + pennies + " pennies");
+        } else {
+            System.out.println("You have: " + pennies + " pennie");
+        }
+        if (nickels > 1) {
+            System.out.println("You have: " + nickels + " nickels");
+
+        } else {
+            System.out.println("You have: " + nickels + " nickel");
+        }
+        if (dimes > 1) {
+            System.out.println("You have: " + dimes + " dimes");
+        } else {
+            System.out.println("You have: " + dimes + " dime");
+        }
+        if (quarters > 1) {
+            System.out.println("You have: " + quarters + " quarters");
+
+        } else {
+            System.out.println("You have: " + quarters + " quarter");
+        }
+        if (half > 1) {
+            System.out.println("You have: " + half + " half-dollars");
+
+        } else {
+            System.out.println("You have: " + half + " half-dollar");
+        }
+        if (dollar > 1) {
+            System.out.println("You have: " + dollar + " dollars");
+
+        } else {
+            System.out.println("You have: " + dollar + " dollar");
+        }
         
+        System.out.println(pennies * 0.01 + nickels * 0.05 + dimes * 0.1 + quarters * 0.25 + half * 0.5 + dollar);
+
     }
 }
