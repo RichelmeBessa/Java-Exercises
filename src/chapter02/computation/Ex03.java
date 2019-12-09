@@ -43,7 +43,8 @@ public class Ex03 {
         }
         Collections.sort(vector);
         System.out.println("The sum of distance is: " + total );
-        System.out.println(menor);
-        System.out.println(maior);
+        System.out.println("The smallest distance is " + menor);
+        System.out.println("The greatest distance is " + maior);
+        System.out.println("The average of cities is: " + total / vector.size());
     }
 }
