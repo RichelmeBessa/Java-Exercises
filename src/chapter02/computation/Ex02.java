@@ -11,25 +11,29 @@ import java.util.Scanner;
 
 public class Ex02<T> {
 
-    public void print(T msg)
-    {
-        System.out.println(msg);
-    }
-
     public static void main(String[] args)
     {
         Scanner scanner = new Scanner(System.in);
-        List<Boolean> gay = new ArrayList<>();
 
-        gay.add(true);
-        gay.add(false);
-        gay.add(true);
-        gay.add(false);
-        gay.add(true);
+        List<Double> temperatures = new ArrayList<>();
 
-        System.out.println("Is Richelme gay?");
-        for (int i = 0; i < gay.size(); i++) {
-            System.out.println(gay.get(i));
+        double total = 0;
+        while (true) {
+
+            System.out.println("Enter a temperature:  ");
+            String input = scanner.next();
+            if (input.equals("x")) {
+                break;
+            }
+            temperatures.add(Double.parseDouble(input));
         }
+        
+        for (Double temperature : temperatures) {
+            total += temperature;
+        }
+
+        System.out.println("A media e:" + total / temperatures.size());
+
     }
+
 }
