@@ -29,22 +29,22 @@ public class Ex03 {
             }
             vector.add(Double.parseDouble(input));
         }
-        double maior = 0;
-        double menor = Double.MAX_VALUE;
+        double bigger = 0;
+        double smallest = Double.MAX_VALUE;
         for (Double distance : vector){
             total += distance;
-            if (distance > maior){
-                maior = distance;
+            if (distance > bigger){
+                bigger = distance;
             } 
-            if (distance < menor){
-                menor = distance;
+            if (distance < smallest){
+                smallest = distance;
             }
             
         }
         Collections.sort(vector);
         System.out.println("The sum of distance is: " + total );
-        System.out.println("The smallest distance is " + menor);
-        System.out.println("The greatest distance is " + maior);
+        System.out.println("The smallest distance is " + smallest);
+        System.out.println("The greatest distance is " + bigger);
         System.out.println("The average of cities is: " + total / vector.size());
     }
 }
