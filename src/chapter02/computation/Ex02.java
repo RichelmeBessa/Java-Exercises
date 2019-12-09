@@ -6,6 +6,7 @@
 package chapter02.computation;
 
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.List;
 import java.util.Scanner;
 
@@ -22,18 +23,30 @@ public class Ex02<T> {
 
             System.out.println("Enter a temperature:  ");
             String input = scanner.next();
+
             if (input.equals("x")) {
                 break;
             }
             temperatures.add(Double.parseDouble(input));
         }
-        
+
+        temperatures.sort((a, b) -> a.compareTo(b));
+
         for (Double temperature : temperatures) {
             total += temperature;
         }
-
-        System.out.println("A media e:" + total / temperatures.size());
-
+        
+        double median = 0;
+        double hindx = temperatures.get(temperatures.size() / 2);
+        
+        if (temperatures.size() % 2 == 0) {
+            median = (hindx + hindx / 2 - 1) / 2;
+        } else {
+            median = temperatures.get(temperatures.size() / 2);
+        }
+        System.out.println("The average is :" + total / temperatures.size());
+        System.out.println("The order of temperatures is: " + temperatures);
+        System.out.println("The median is: " + median);
     }
 
 }
