@@ -1,4 +1,3 @@
-package chapter02.computation;
 
 /*
  * Write a program to play a numbers guessing game. The user thinks a number
@@ -6,6 +5,8 @@ package chapter02.computation;
  * is. Your program should be able to identify the number after asking no more
  * than seven questions.
  */
+package chapter02.computation;
+
 import java.util.Scanner;
 
 public class Ex04 {
@@ -21,39 +22,34 @@ public class Ex04 {
             System.exit(0);
         }
 
-        int guess = 50;
-        int half = 50;
-        int tries = 0;
-
-        while (true) {
-            if (tries > 6) {
-                System.out.println("I could not find the number, you won :)");
-                break;
-            }
-
-            if (answer == guess) {
-                System.out.println("Number found, it is " + guess + " right?");
-                break;
-            }
-            
-            boolean verification = answer < guess;
-
-            System.out.println("The number you entered is smaller than " + guess + "?");
-            System.out.println(verification);
-
-            half = half / 2;
-
-            if (half == 0) {
-                half = 1;
-            }
-
-            if (verification) {
-                guess = guess - half;
-            } else {
-                guess = guess + half;
-            }
-
-            tries++;
-        }
+//       
+        jacas(answer, 50, 50, 0);
     }
+    
+    private static void jacas(int answer, int guess, int half, int tries)
+    {
+        if (tries > 5) {
+            System.out.println("I could not find the number, you won :)");
+            return;
+        }
+        if (answer == guess) {
+            System.out.println("Number found, it is " + guess + " right?");
+        }
+        
+        boolean verification = answer < guess;
+        System.out.println("The number you entered is smaller than " + guess + "?");
+        System.out.println(verification);
+        
+         half = half / 2;
+        
+        if(half == 0 ){
+            half = 1;
+        }
+        if(verification) {
+            guess = guess - half;
+        } else {
+            guess = guess + half;
+        }
+        jacas(answer, guess, half, tries + 1);
+    } 
 }
