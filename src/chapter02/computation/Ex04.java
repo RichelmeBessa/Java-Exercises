@@ -20,7 +20,8 @@ public class Ex04 {
         if (answer < 1 || answer >= 100) {
             System.out.println("Invalid number, have you heard me about the rules?");
             System.exit(0);
-        } 
+        }
+
         jacas(answer, 50, 50, 0);
         scanner.close();
     }
@@ -36,19 +37,22 @@ public class Ex04 {
         }
         
         boolean verification = answer < guess;
+
         System.out.println("The number you entered is smaller than " + guess + "?");
         System.out.println(verification);
         
-         half = half / 2;
+        half /= 2;
         
-        if(half == 0 ){
+        if (half == 0) {
             half = 1;
         }
+
         if(verification) {
-            guess = guess - half;
+            guess -= half;
         } else {
-            guess = guess + half;
+            guess += half;
         }
+
         jacas(answer, guess, half, tries + 1);
     }
     
