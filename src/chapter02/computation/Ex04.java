@@ -20,12 +20,10 @@ public class Ex04 {
         if (answer < 1 || answer >= 100) {
             System.out.println("Invalid number, have you heard me about the rules?");
             System.exit(0);
-        }
-
-//       
+        } 
         jacas(answer, 50, 50, 0);
+        scanner.close();
     }
-    
     private static void jacas(int answer, int guess, int half, int tries)
     {
         if (tries > 5) {
@@ -52,5 +50,6 @@ public class Ex04 {
             guess = guess + half;
         }
         jacas(answer, guess, half, tries + 1);
-    } 
+    }
+    
 }
