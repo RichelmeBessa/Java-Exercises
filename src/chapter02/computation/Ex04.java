@@ -34,6 +34,7 @@ public class Ex04 {
         }
         if (answer == guess) {
             System.out.println("Number found, it is " + guess + " right?");
+            return;
         }
         
         boolean verification = answer < guess;
