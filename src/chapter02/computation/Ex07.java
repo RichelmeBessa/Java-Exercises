@@ -13,7 +13,7 @@ public class Ex07 {
     public static void main(String[] args)
     {
         Scanner scanner = new Scanner(System.in);
-        System.out.println("Enter a number then basic operations and other number. Press 'x' to stop. ");
+        System.out.println("Enter a numbers spelled-out then basic operations and other number. Press 'x' to stop. ");
 
         while (true) {
        
