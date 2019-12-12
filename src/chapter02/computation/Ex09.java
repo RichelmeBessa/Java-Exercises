@@ -12,20 +12,30 @@ public class Ex09 {
 
     public static void main(String[] args)
     {
-            Scanner scanner = new Scanner(System.in);
-            
+        Scanner scanner = new Scanner(System.in);
+
 //            int square;
-        double garden;
-        double a = 2;
-        
+        int garden;
+
         while (true) {
             System.out.println("Enter with a number for it to be similar to the emperor who referred to rice grains.");
 //            square = scanner.nextInt();
-            garden = Double.parseDouble(scanner.next());
+            garden = scanner.nextInt();
 //            System.out.println(Math.pow(a, square - 1));
-            System.out.println(Math.pow(a, garden - 1));
+//            System.out.println(Math.pow(a, garden - 1));
+            Integer total = 1;
+
+            for (int i = 1; i < garden; ++i) {
+                total *= 2;
+            }
+
+            System.out.println(total);
         }
-//        Large number integer is 1024.  
-//        Large number double is 24.2
+//        Large number integer is 1024.
+//        Large number double is 1024
+//        Large number float is 128.
+//        Large number byte is 8.
+//        Large numbes long is 64.
+//        Larger number short is 24
     }
 }
