@@ -32,31 +32,31 @@ public class Ex06 {
                 System.out.println(spelled.get(0));
                 break;
             case "1":
-                System.out.println("one");
+                System.out.println(spelled.get(1));
                 break;
             case "2":
-                System.out.println("two");
+                System.out.println(spelled.get(2));
                 break;
             case "3":
-                System.out.println("three");
+                System.out.println(spelled.get(3));;
                 break;
             case "4":
-                System.out.println("four");
+                System.out.println(spelled.get(4));
                 break;
             case "5":
-                System.out.println("five");
+                System.out.println(spelled.get(5));
                 break;
             case "6":
-                System.out.println("six");
+                System.out.println(spelled.get(6));
                 break;
             case "7":
-                System.out.println("seven");
+                System.out.println(spelled.get(7));
                 break;
             case "8":
-                System.out.println("eight");;
+                System.out.println(spelled.get(8));
                 break;
             case "9":
-                System.out.println("nine");
+                System.out.println(spelled.get(9));
                 break;
             default:
                 System.out.println("ERROR");
