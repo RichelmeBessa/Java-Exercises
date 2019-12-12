@@ -31,11 +31,11 @@ public class Ex09 {
 
             System.out.println(total);
         }
-//        Large number integer is 1024.
-//        Large number double is 1024
-//        Large number float is 128.
 //        Large number byte is 8.
-//        Large numbes long is 64.
 //        Larger number short is 24
+//        Large number integer is 32.
+//        Large numbes long is 64.
+//        Large number float is 128.
+//        Large number double is 1024
     }
 }
