@@ -40,13 +40,13 @@ public class Ex17 {
                 System.out.println("ERROR!");
                 break;
             }
-            
-            for(int h = 0; h < names.size(); h++){
+
+            for (int h = 0; h < names.size(); h++) {
                 String a = names.get(h);
-                for(int g = 0; g < names.size(); g++){
+                for (int g = 0; g < names.size(); g++) {
                     String b = names.get(g);
-                    if(a.equals(b)){
-                        System.out.println("Not possible insert " + a +" a number more of times ");
+                    if (a.equals(b) && b != a) {
+                        System.out.println("Not possible insert " + a + " more of times ");
                         System.exit(0);
                     }
                 }
@@ -59,7 +59,27 @@ public class Ex17 {
         for (int i = 0; i < names.size(); i++) {
             System.out.println(names.get(i) + " " + scores.get(i));
         }
-        scan.close();
-    }
+ 
+        while (true) {
+            System.out.println("Type a name to its scores: (Type 'x' to stop)");
+            String word = scan.next();
 
+            if (word.equals("x")) {
+                break;
+            }
+            boolean invalid = true;
+            for (int i = 0; i < names.size(); i++) {
+                if (word.equals(names.get(i))) {
+                    System.out.println("Scores: " + scores.get(i));
+                    invalid = false;
+                }
+            }
+            if (invalid) {
+                System.out.println("Name not found.");
+            }
+
+        }
+            scan.close();
+
+    }
 }
