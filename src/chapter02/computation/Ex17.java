@@ -1,4 +1,9 @@
 /**
+ * Modify the program from previous exercise so that when you enter a name,
+ * the program will output the corresponding score or "name not found".
+ */
+
+/**
  * Write a program where you first enter a set of name-and-value pairs, such
  * as Joe 17 and Barbara 22. For each pair, add the name to the vector called
  * names and the number to a vector called scores (in corresponding positions,
@@ -59,27 +64,7 @@ public class Ex17 {
         for (int i = 0; i < names.size(); i++) {
             System.out.println(names.get(i) + " " + scores.get(i));
         }
- 
-        while (true) {
-            System.out.println("Type a name to its scores: (Type 'x' to stop)");
-            String word = scan.next();
-
-            if (word.equals("x")) {
-                break;
-            }
-            boolean invalid = true;
-            for (int i = 0; i < names.size(); i++) {
-                if (word.equals(names.get(i))) {
-                    System.out.println("Scores: " + scores.get(i));
-                    invalid = false;
-                }
-            }
-            if (invalid) {
-                System.out.println("Name not found.");
-            }
-
-        }
-            scan.close();
-
+        scan.close();
     }
+
 }
