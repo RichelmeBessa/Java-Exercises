@@ -1,7 +1,3 @@
-/**
- * Modify the program from previous exercise so that when you enter a name,
- * the program will output the corresponding score or "name not found".
- */
 
 /**
  * Write a program where you first enter a set of name-and-value pairs, such
