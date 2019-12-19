@@ -21,10 +21,12 @@ public class Ex01 {
         String reverse = "";
         
         int length = word.length();
+        char unic = 0;
         
-        for( int i = length - 1; i>= 0; i--){
+        for( int i = length - 2; i>= 0; i--){
+            unic = word.charAt(length - 1);
             reverse += word.charAt(i);
         }
-        System.out.println("Reverse of the string: " + reverse);
+        System.out.println("Reverse of the string: " + Character.toUpperCase(unic) + reverse.toLowerCase());
     }
 }
