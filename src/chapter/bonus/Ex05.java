@@ -20,7 +20,7 @@ public class Ex05 {
         while (true) {
             long value = scan.nextLong();
 
-            String numb = String.format("%06f", value);
+            String numb = String.format("%06d", value);
             System.out.println(numb);
         }
     }
