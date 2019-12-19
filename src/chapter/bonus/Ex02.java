@@ -22,9 +22,9 @@ public class Ex02 {
         char nha = 0;
         
         int length = word.length();
-
+        
+        nha = word.charAt(length - 1);
         for (int i = length - 2; i >= 0; i--) {
-            nha = word.charAt(length - 1);
             reverse += word.charAt(i);
         }
         System.out.println("Reverse of the string: " + Character.toUpperCase(nha) + reverse.toLowerCase());
