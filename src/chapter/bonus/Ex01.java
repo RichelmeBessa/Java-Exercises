@@ -1,3 +1,8 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
 package chapter.bonus;
 
 import java.util.Scanner;
@@ -16,12 +21,11 @@ public class Ex01 {
         String reverse = "";
         
         int length = word.length();
-        char unic = 0;
         
-        for( int i = length - 2; i>= 0; i--){
-            unic = word.charAt(length - 1);
+        
+        for( int i = length - 1; i>= 0; i--){
             reverse += word.charAt(i);
         }
-        System.out.println("Reverse of the string: " + Character.toUpperCase(unic) + reverse.toLowerCase());
+        System.out.println("Reverse of the string: " + reverse);
     }
 }
